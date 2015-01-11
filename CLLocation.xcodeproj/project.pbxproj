@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963DF99D1A62D96200F6C6A2 /* MapViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963DF99C1A62D96200F6C6A2 /* MapViewViewController.m */; };
 		967AC5131A61BA30007A8691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 967AC5121A61BA30007A8691 /* main.m */; };
 		967AC5161A61BA30007A8691 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 967AC5151A61BA30007A8691 /* AppDelegate.m */; };
 		967AC5191A61BA30007A8691 /* CLLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 967AC5171A61BA30007A8691 /* CLLocation.xcdatamodeld */; };
@@ -15,6 +16,8 @@
 		967AC5211A61BA30007A8691 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967AC5201A61BA30007A8691 /* Images.xcassets */; };
 		967AC5241A61BA30007A8691 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 967AC5221A61BA30007A8691 /* LaunchScreen.xib */; };
 		967AC5301A61BA30007A8691 /* CLLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 967AC52F1A61BA30007A8691 /* CLLocationTests.m */; };
+		967AC53A1A61BCD8007A8691 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967AC5391A61BCD8007A8691 /* MapKit.framework */; };
+		967AC53D1A61BD31007A8691 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967AC53C1A61BD31007A8691 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963DF99B1A62D96200F6C6A2 /* MapViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewViewController.h; sourceTree = "<group>"; };
+		963DF99C1A62D96200F6C6A2 /* MapViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewViewController.m; sourceTree = "<group>"; };
 		967AC50D1A61BA30007A8691 /* CLLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967AC5111A61BA30007A8691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967AC5121A61BA30007A8691 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +47,8 @@
 		967AC5291A61BA30007A8691 /* CLLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		967AC52E1A61BA30007A8691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		967AC52F1A61BA30007A8691 /* CLLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLLocationTests.m; sourceTree = "<group>"; };
+		967AC5391A61BCD8007A8691 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		967AC53C1A61BD31007A8691 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967AC53D1A61BD31007A8691 /* CoreLocation.framework in Frameworks */,
+				967AC53A1A61BCD8007A8691 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +77,7 @@
 				967AC50F1A61BA30007A8691 /* CLLocation */,
 				967AC52C1A61BA30007A8691 /* CLLocationTests */,
 				967AC50E1A61BA30007A8691 /* Products */,
+				967AC53B1A61BCEA007A8691 /* Framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,14 +93,12 @@
 		967AC50F1A61BA30007A8691 /* CLLocation */ = {
 			isa = PBXGroup;
 			children = (
-				967AC5141A61BA30007A8691 /* AppDelegate.h */,
-				967AC5151A61BA30007A8691 /* AppDelegate.m */,
+				967AC51D1A61BA30007A8691 /* Main.storyboard */,
+				963DF99B1A62D96200F6C6A2 /* MapViewViewController.h */,
+				963DF99C1A62D96200F6C6A2 /* MapViewViewController.m */,
 				967AC51A1A61BA30007A8691 /* ViewController.h */,
 				967AC51B1A61BA30007A8691 /* ViewController.m */,
-				967AC51D1A61BA30007A8691 /* Main.storyboard */,
 				967AC5201A61BA30007A8691 /* Images.xcassets */,
-				967AC5221A61BA30007A8691 /* LaunchScreen.xib */,
-				967AC5171A61BA30007A8691 /* CLLocation.xcdatamodeld */,
 				967AC5101A61BA30007A8691 /* Supporting Files */,
 			);
 			path = CLLocation;
@@ -99,6 +107,10 @@
 		967AC5101A61BA30007A8691 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				967AC5141A61BA30007A8691 /* AppDelegate.h */,
+				967AC5151A61BA30007A8691 /* AppDelegate.m */,
+				967AC5171A61BA30007A8691 /* CLLocation.xcdatamodeld */,
+				967AC5221A61BA30007A8691 /* LaunchScreen.xib */,
 				967AC5111A61BA30007A8691 /* Info.plist */,
 				967AC5121A61BA30007A8691 /* main.m */,
 			);
@@ -120,6 +132,15 @@
 				967AC52E1A61BA30007A8691 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		967AC53B1A61BCEA007A8691 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				967AC53C1A61BD31007A8691 /* CoreLocation.framework */,
+				967AC5391A61BCD8007A8691 /* MapKit.framework */,
+			);
+			name = Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +245,7 @@
 			files = (
 				967AC5191A61BA30007A8691 /* CLLocation.xcdatamodeld in Sources */,
 				967AC5161A61BA30007A8691 /* AppDelegate.m in Sources */,
+				963DF99D1A62D96200F6C6A2 /* MapViewViewController.m in Sources */,
 				967AC51C1A61BA30007A8691 /* ViewController.m in Sources */,
 				967AC5131A61BA30007A8691 /* main.m in Sources */,
 			);
@@ -348,6 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CLLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +381,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CLLocation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +440,7 @@
 				967AC5351A61BA30007A8691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		967AC5361A61BA30007A8691 /* Build configuration list for PBXNativeTarget "CLLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				967AC5381A61BA30007A8691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
